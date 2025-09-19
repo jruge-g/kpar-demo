@@ -92,3 +92,11 @@ color: rgba(255, 255, 255, 0.8);
   .navbar-brand img {
   height: 45px; /* ajusta a tu gusto */
 }
+
+.video-responsive {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
