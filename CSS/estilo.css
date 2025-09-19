@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #000000;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #c62828, #1565c0);
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.btn-kpar {
+  background: linear-gradient(45deg, #c62828, rgb(0, 0, 0));
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-kpar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Sección destacada */
+.seccion-kpar {
+  background: black;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.bi {
+color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel {
+  margin-top: 40px;
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-img-hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.icono-flex {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+    font-size: 14px;
+  }
