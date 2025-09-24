@@ -1,0 +1,298 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolución De Los Sistemas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <style>
+    td {
+      display: none;
+    }
+    tr.open td {
+      display: table-cell;
+    }
+    th {
+      cursor: pointer;
+      font-family: sans-serif;
+      color: black;
+    }
+    table {
+      width: 100%;
+      border-color: black;
+    }
+  </style>
+</head>
+<body>
+  
+<!-- Navbar superior -->
+<nav class="navbar navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="Images/logo-kpar.png" alt="Logo KPAR" width="35" height="35" class="me-2 logo-navbar">
+      KPAR
+    </a>
+    <!-- Botón de menú -->
+    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+      ☰ Menú
+    </button>
+  </div>
+</nav>
+
+<!-- Sidebar Offcanvas -->
+<div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="sidebarMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú Principal</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="accordionSidebar">
+
+      <!-- Sección Principal -->
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingPrincipal">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapsePrincipal" 
+                  aria-expanded="false" aria-controls="collapsePrincipal">
+            Principal
+          </button>
+        </h2>
+        <div id="collapsePrincipal" class="accordion-collapse collapse" 
+             aria-labelledby="headingPrincipal" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none d-block py-1">Inicio</a></li>
+              <li><a href="Mision.html" class="text-white text-decoration-none d-block py-1">Misión</a></li>
+              <li><a href="Vision.html" class="text-white text-decoration-none d-block py-1">Visión</a></li>
+              <li><a href="Formularios.html" class="text-white text-decoration-none d-block py-1">Formularios</a></li>
+              <li><a href="Galeria.html" class="text-white text-decoration-none d-block py-1">Galería</a></li>
+              <li><a href="Temas.html" class="text-white text-decoration-none d-block py-1">Temas</a></li>
+              <li><a href="Sombras.html" class="text-white text-decoration-none d-block py-1">Sombras</a></li>
+              <li><a href="Carta.html" class="text-white text-decoration-none d-block py-1">Carta</a></li>
+              <li><a href="Flex.html" class="text-white text-decoration-none d-block py-1">Flex</a></li>
+              <li><a href="Transiciones.html" class="text-white text-decoration-none d-block py-1">Transiciones</a></li>
+              <li><a href="Video.html" class="text-white text-decoration-none d-block py-1">Video</a></li>
+              <li><a href="Audio.html" class="text-white text-decoration-none d-block py-1">Audio</a></li>
+              <li><a href="Transparencias.html" class="text-white text-decoration-none d-block py-1">Transparencias</a></li>
+              <li><a href="Css.html" class="text-white text-decoration-none d-block py-1">CSS</a></li>
+              <li><a href="Columnas.html" class="text-white text-decoration-none d-block py-1">Columnas</a></li>
+              <li><a href="Animacion.html" class="text-white text-decoration-none d-block py-1">Animación</a></li>
+              <li><a href="ContenidoEditable.html" class="text-white text-decoration-none d-block py-1">Contenido Editable</a></li>
+              <li><a href="AdaptacionMoviles.html" class="text-white text-decoration-none d-block py-1">Adaptación Móviles</a></li>
+              <li><a href="Tienda.html" class="text-white text-decoration-none d-block py-1">Tienda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingInvestigacion">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseInvestigacion" 
+                  aria-expanded="false" aria-controls="collapseInvestigacion">
+            Investigación
+          </button>
+        </h2>
+        <div id="collapseInvestigacion" class="accordion-collapse collapse" 
+             aria-labelledby="headingInvestigacion" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="Investigacion.html" class="text-white text-decoration-none d-block py-1">Proyecto de Investigación</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingOficial">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseOficial" 
+                  aria-expanded="false" aria-controls="collapseOficial">
+            Página Oficial
+          </button>
+        </h2>
+        <div id="collapseOficial" class="accordion-collapse collapse" 
+             aria-labelledby="headingOficial" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="https://jruge-g.github.io/kpar-page/" target="_blank" class="text-white text-decoration-none d-block py-1">Ir a KPAR Oficial</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<main class="container my-5">
+  <div class="card shadow-lg p-4">
+    <h1 class="text-center mb-4">Evolución De Los Sistemas Computacionales</h1>
+    <p class="text-muted mb-4 text-center">Proyecto de investigación donde se presentan distintos modelos, lenguajes y tecnologías que han marcado la evolución del software y los sistemas.</p>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover bg-white text-dark align-middle">
+        <thead class="table-dark text-center">
+          <tr>
+            <th>Sistema</th>
+            <th>Concepto</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th> <h3 id="ultimo"> Network File System </h3></th>
+            <td> NFS (Network File System) es un protocolo de red que permite a un sistema (cliente) acceder a archivos y directorios que están ubicados en otro sistema (servidor), como si fueran parte de su propio sistema de archivos local. </td>
+            <td> <img src="Imagenes/nfs architecture.jpg" width="400"> </td>
+          </tr>
+
+          <tr>
+            <th id="monolitico"> <h3>Monolítico</h3></th>
+            <td> Un sistema monolítico es una arquitectura de software en la que todos los módulos y componentes de una aplicación se encuentran unidos en una sola unidad inseparable. Esto significa que la lógica de negocio, la gestión de datos y la interfaz de usuario están estrechamente acoplados, lo que facilita su desarrollo inicial pero complica la escalabilidad y el mantenimiento. Este tipo de sistemas fue muy común en las primeras etapas del desarrollo de software, ya que ofrecía simplicidad en su implementación, aunque cualquier modificación requería cambios en toda la aplicación, aumentando así el riesgo de errores globales. </td>
+            <td><img src="Imagenes/sistema-operativo-en-red.jpg" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="clienteServidor"><h3>Cliente - Servidor</h3></th>
+            <td> El modelo cliente-servidor surgió como una evolución del monolito, permitiendo separar las funciones de los sistemas. En este enfoque, el cliente es el encargado de solicitar servicios, mientras que el servidor responde proporcionando los recursos necesarios, como datos o procesos. Esta arquitectura permitió la conexión de múltiples clientes hacia un mismo servidor, fomentando la creación de redes locales y el desarrollo de aplicaciones más dinámicas y distribuidas. Su importancia radica en que fue la base de gran parte de la infraestructura tecnológica de internet y de sistemas modernos de comunicación y almacenamiento de información. </td>
+            <td><img src="Imagenes/cliente-servidor.webp" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="microservicios"><h3>Microservicios</h3></th>
+            <td> La arquitectura de microservicios representa un avance significativo respecto al modelo cliente-servidor. En este paradigma, una aplicación se descompone en pequeños servicios independientes, cada uno encargado de una función específica y que se comunican entre sí mediante interfaces bien definidas como APIs. Gracias a esta independencia, los microservicios permiten un desarrollo más ágil, despliegues continuos y mayor capacidad de escalabilidad, ya que cada servicio puede evolucionar o actualizarse sin afectar a los demás. Este modelo ha sido adoptado por grandes empresas como Amazon, Netflix y Spotify debido a su flexibilidad y capacidad de responder rápidamente a las necesidades cambiantes de los usuarios. </td>
+            <td><img src="Imagenes/microservicios.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="nfs"><h3>Network File System (NFS)</h3></th>
+            <td> El sistema de archivos en red, conocido como NFS, es un protocolo que permite a los usuarios acceder a archivos almacenados en un servidor remoto como si fueran parte de su propio equipo. Esta tecnología surgió para facilitar la colaboración y el trabajo en entornos distribuidos, especialmente en sistemas Unix y Linux. Al ofrecer la posibilidad de compartir recursos a través de la red, NFS contribuyó a la creación de sistemas más integrados, donde la distancia física entre clientes y servidores dejaba de ser una limitante para el acceso a la información. </td>
+            <td><img src="Imagenes/nfs architecture.jpg" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="html"><h3>HTML</h3></th>
+            <td> HTML, siglas de HyperText Markup Language, es el lenguaje estándar para la creación de páginas web. Su función principal es estructurar el contenido que se muestra en un navegador, utilizando etiquetas que definen títulos, párrafos, imágenes, enlaces y otros elementos. Aunque no es un lenguaje de programación en sí mismo, es la base fundamental del desarrollo web, ya que permite organizar la información y servir como punto de partida para integrar otros lenguajes como CSS y JavaScript, que enriquecen la experiencia visual e interactiva. </td>
+            <td><img src="Imagenes/html.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="css"><h3>CSS</h3></th>
+            <td> CSS, o Cascading Style Sheets, es un lenguaje de diseño que se utiliza para dar estilo y presentación a las páginas web creadas con HTML. Con CSS es posible definir colores, tipografías, márgenes, alineaciones, animaciones y adaptaciones a distintos dispositivos, lo que permite separar la estructura del contenido de su apariencia visual. Gracias a CSS, las páginas web pueden ser responsivas y ofrecer experiencias atractivas y consistentes en computadoras, tabletas y teléfonos móviles, convirtiéndose en un componente indispensable del desarrollo web moderno. </td>
+            <td><img src="Imagenes/css.webp" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="js"><h3>JavaScript</h3></th>
+            <td> JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para dotar de interactividad a las páginas web. A diferencia de HTML y CSS, que se enfocan en la estructura y el diseño, JavaScript permite realizar cálculos, validar formularios, actualizar contenido dinámicamente y comunicarse con servidores sin necesidad de recargar la página. Su evolución lo ha convertido en uno de los lenguajes más importantes del mundo, siendo utilizado tanto en el frontend como en el backend mediante entornos como Node.js. Gracias a JavaScript, la web pasó de ser un espacio estático a una plataforma dinámica e interactiva. </td>
+            <td><img src="Imagenes/js.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="react"><h3>React</h3></th>
+            <td> React es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario de manera eficiente y modular. Su principal característica es el uso de componentes reutilizables, lo que permite dividir una aplicación en partes pequeñas e independientes que pueden combinarse para formar interfaces complejas. Además, React incorpora un sistema llamado Virtual DOM, que mejora el rendimiento al actualizar únicamente los elementos necesarios en pantalla. Hoy en día, es una de las tecnologías más utilizadas en el desarrollo frontend, formando parte del ecosistema moderno de frameworks y librerías que permiten la creación de aplicaciones web rápidas, escalables y fáciles de mantener. </td>
+            <td><img src="Imagenes/react.png" width="400"></td>
+          </tr>
+
+
+          <tr>
+            <th id="Python"><h3>Phyton</h3></th>
+            <td> Python es un lenguaje de programación de alto nivel caracterizado por su simplicidad, legibilidad y versatilidad. Se utiliza en campos como el desarrollo web, la inteligencia artificial, la ciencia de datos y la automatización de procesos. Su sintaxis clara y la gran cantidad de librerías disponibles lo convierten en una de las herramientas más populares del mundo, permitiendo a principiantes y expertos crear aplicaciones robustas de manera eficiente. </td>
+            <td><img src="Imagenes/py.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Java"><h3>Java</h3></th>
+            <td> Java es un lenguaje de programación orientado a objetos que se consolidó como uno de los pilares del software empresarial. Su lema “escribir una vez y ejecutar en cualquier lugar” le permitió ser multiplataforma gracias a la máquina virtual Java. Es ampliamente usado en aplicaciones empresariales, sistemas bancarios, desarrollo móvil en Android y soluciones de gran escala, destacando por su robustez, seguridad y comunidad activa. </td>
+            <td><img src="Imagenes/java.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="C"><h3>C#</h3></th>
+            <td> C# es un lenguaje creado por Microsoft que combina potencia y facilidad de uso, diseñado para trabajar con la plataforma .NET. Su orientación a objetos y sus características modernas lo hacen ideal para aplicaciones de escritorio, móviles y videojuegos a través de Unity. Se ha convertido en una pieza clave en el ecosistema de Microsoft y en el desarrollo de software empresarial y de entretenimiento. </td>
+            <td><img src="Imagenes/c.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="php"><h3>PHP</h3></th>
+            <td> PHP es un lenguaje de programación creado para el desarrollo web dinámico que marcó un antes y un después en la expansión de internet. Su capacidad para integrarse con bases de datos y mezclarse con HTML permitió la creación de millones de sitios web y plataformas como WordPress. Aunque fue criticado en sus primeras versiones, hoy en día sigue vigente gracias a mejoras en seguridad y rendimiento. </td>
+            <td><img src="Imagenes/php.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Node.js"><h3>Node.js</h3></th>
+            <td> Node.js es un entorno que permite ejecutar JavaScript en el lado del servidor. Su modelo basado en eventos y no bloqueante lo convierte en una opción eficiente para aplicaciones en tiempo real como chats, juegos en línea y transmisiones de datos. Con Node.js, JavaScript puede usarse tanto en el frontend como en el backend, lo que unifica el desarrollo y facilita la creación de proyectos modernos y escalables. </td>
+            <td><img src="Imagenes/node.JPG" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Angular"><h3>Angular</h3></th>
+            <td> Angular es un framework desarrollado por Google para construir aplicaciones web dinámicas y de una sola página. Se basa en TypeScript y utiliza componentes estructurados que facilitan el desarrollo de proyectos grandes. Su arquitectura robusta y el soporte de una comunidad global lo han convertido en una de las herramientas preferidas en el entorno empresarial. </td>
+            <td><img src="Imagenes/angular.JPG" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Vue.js"><h3>Vue.js</h3></th>
+            <td> Vue.js es un framework progresivo de JavaScript que destaca por su simplicidad y flexibilidad. Su curva de aprendizaje es baja y permite construir interfaces interactivas de manera rápida, integrándose fácilmente con proyectos existentes. Su modelo basado en componentes lo hace ideal para aplicaciones escalables sin perder facilidad de uso. </td>
+            <td><img src="Imagenes/vue.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Sistemas Distribuidos"><h3>Sistemas Distribuidos</h3></th>
+            <td> Los sistemas distribuidos están formados por múltiples computadoras que trabajan de manera coordinada para cumplir un objetivo común, presentándose al usuario como si fueran un único sistema. Su principal ventaja es que permiten repartir la carga de trabajo, mejorar la tolerancia a fallos y aumentar la escalabilidad. Se utilizan en motores de búsqueda, redes sociales y aplicaciones que requieren gran disponibilidad. </td>
+            <td><img src="Imagenes/sistema-distribuidos.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Computacion en la nube"><h3>Computacion en la nube</h3></th>
+            <td> La computación en la nube revolucionó la forma de acceder a los recursos informáticos, permitiendo a empresas y usuarios obtener servidores, almacenamiento y software a través de internet bajo demanda. Este modelo eliminó la necesidad de grandes inversiones en infraestructura, facilitando el crecimiento de negocios globales y la creación de servicios accesibles desde cualquier lugar del mundo. </td>
+            <td><img src="Imagenes/nube.webp" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Contenedores y Virtualizacion"><h3>Contenedores y Virtualizacion</h3></th>
+            <td> La virtualización permitió ejecutar varios sistemas operativos en un mismo hardware mediante máquinas virtuales, mientras que los contenedores introdujeron una forma más ligera de aislar aplicaciones junto con sus dependencias. Tecnologías como Docker y Kubernetes han impulsado esta tendencia, posibilitando el despliegue rápido y eficiente de aplicaciones modernas en cualquier entorno. </td>
+            <td><img src="Imagenes/vm-contenedores.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Serverless"><h3>Serverless</h3></th>
+            <td> El modelo Serverless permite a los desarrolladores ejecutar código sin tener que administrar servidores. El proveedor en la nube gestiona automáticamente la infraestructura y escala los recursos según la demanda, cobrando solo por el tiempo de ejecución del código. Esto simplifica el desarrollo y reduce costos, haciendo posible centrarse exclusivamente en la lógica del negocio. </td>
+            <td><img src="Imagenes/serverless.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="Serverless"><h3>Serverless</h3></th>
+            <td> Las bases de datos han evolucionado desde modelos relacionales como SQL, que organizan datos en tablas con integridad y consistencia, hasta bases de datos NoSQL, que permiten manejar grandes volúmenes de datos no estructurados como documentos o grafos. Hoy en día ambos modelos coexisten, adaptándose a distintas necesidades en aplicaciones modernas que requieren velocidad, flexibilidad y escalabilidad. </td>
+            <td><img src="Imagenes/bd.png" width="400"></td>
+          </tr>
+
+          <tr>
+            <th id="ultimo"><h3>Evolucion General</h3></th>
+            <td> La evolución de los sistemas computacionales ha sido un proceso gradual en el que se han ido superando limitaciones y adoptando nuevos modelos arquitectónicos. Desde los sistemas monolíticos, que concentraban todo en una sola unidad, se dio paso al modelo cliente-servidor, que permitió separar funciones y mejorar la interacción en red. Más adelante, los microservicios trajeron consigo la independencia de componentes, facilitando la escalabilidad y el desarrollo ágil. Tecnologías como NFS hicieron posible la colaboración a distancia y el trabajo compartido en redes. En la actualidad, estos avances han sentado las bases de paradigmas modernos como la computación en la nube, los contenedores y el modelo serverless, que continúan transformando la manera en que se diseñan y consumen los sistemas informáticos. </td>
+            <td><img src="Imagenes/sistemas-evo.JPG" width="400"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script>
+  const headers = document.querySelectorAll("table tr th");
+  headers.forEach(th => {
+    th.addEventListener("click", () => {
+      const row = th.parentElement;
+      row.classList.toggle("open");
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

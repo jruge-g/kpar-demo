@@ -6,6 +6,11 @@
   <title>CSS - KPAR</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <style>
     body {
       background-color: #121212;
@@ -73,40 +78,105 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <img src="Images/logo-kpar.png" alt="Logo KPAR" width="45" height="45" class="me-2 logo-navbar">
-        KPAR
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="Mision.html">Misión</a></li>
-          <li class="nav-item"><a class="nav-link" href="Vision.html">Visión</a></li>
-          <li class="nav-item"><a class="nav-link" href="Formularios.html">Formularios</a></li>
-          <li class="nav-item"><a class="nav-link" href="Galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="Temas.html">Temas</a></li>
-          <li class="nav-item"><a class="nav-link" href="Sombras.html">Sombras</a></li>
-          <li class="nav-item"><a class="nav-link" href="Carta.html">Carta</a></li>
-          <li class="nav-item"><a class="nav-link" href="Flex.html">Flex</a></li>
-          <li class="nav-item"><a class="nav-link" href="Transiciones.html">Transiciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="Video.html">Video</a></li>
-          <li class="nav-item"><a class="nav-link" href="Audio.html">Audio</a></li>
-          <li class="nav-item"><a class="nav-link" href="Transparencias.html">Transparencias</a></li>
-          <li class="nav-item"><a class="nav-link" href="Css.html">CSS</a></li>
-          <li class="nav-item"><a class="nav-link" href="Columnas.html">Columnas</a></li>
-          <li class="nav-item"><a class="nav-link" href="Animacion.html">Animación</a></li>
-          <li class="nav-item"><a class="nav-link" href="ContenidoEditable.html">Contenido Editable</a></li>
-          <li class="nav-item"><a class="nav-link" href="AdaptacionMoviles.html">Adaptación Móviles</a></li>
-          <li class="nav-item"><a class="nav-link" href="Tienda.html">Tienda</a></li>
-        </ul>
+<nav class="navbar navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="Images/logo-kpar.png" alt="Logo KPAR" width="35" height="35" class="me-2 logo-navbar">
+      KPAR
+    </a>
+    <!-- Botón de menú -->
+    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+      ☰ Menú
+    </button>
+  </div>
+</nav>
+<!-- Sidebar Offcanvas -->
+<div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="sidebarMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú Principal</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="accordionSidebar">
+
+      <!-- Sección Principal -->
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingPrincipal">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapsePrincipal" 
+                  aria-expanded="false" aria-controls="collapsePrincipal">
+            Principal
+          </button>
+        </h2>
+        <div id="collapsePrincipal" class="accordion-collapse collapse" 
+             aria-labelledby="headingPrincipal" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none d-block py-1">Inicio</a></li>
+              <li><a href="Mision.html" class="text-white text-decoration-none d-block py-1">Misión</a></li>
+              <li><a href="Vision.html" class="text-white text-decoration-none d-block py-1">Visión</a></li>
+              <li><a href="Formularios.html" class="text-white text-decoration-none d-block py-1">Formularios</a></li>
+              <li><a href="Galeria.html" class="text-white text-decoration-none d-block py-1">Galería</a></li>
+              <li><a href="Temas.html" class="text-white text-decoration-none d-block py-1">Temas</a></li>
+              <li><a href="Sombras.html" class="text-white text-decoration-none d-block py-1">Sombras</a></li>
+              <li><a href="Carta.html" class="text-white text-decoration-none d-block py-1">Carta</a></li>
+              <li><a href="Flex.html" class="text-white text-decoration-none d-block py-1">Flex</a></li>
+              <li><a href="Transiciones.html" class="text-white text-decoration-none d-block py-1">Transiciones</a></li>
+              <li><a href="Video.html" class="text-white text-decoration-none d-block py-1">Video</a></li>
+              <li><a href="Audio.html" class="text-white text-decoration-none d-block py-1">Audio</a></li>
+              <li><a href="Transparencias.html" class="text-white text-decoration-none d-block py-1">Transparencias</a></li>
+              <li><a href="Css.html" class="text-white text-decoration-none d-block py-1">CSS</a></li>
+              <li><a href="Columnas.html" class="text-white text-decoration-none d-block py-1">Columnas</a></li>
+              <li><a href="Animacion.html" class="text-white text-decoration-none d-block py-1">Animación</a></li>
+              <li><a href="ContenidoEditable.html" class="text-white text-decoration-none d-block py-1">Contenido Editable</a></li>
+              <li><a href="AdaptacionMoviles.html" class="text-white text-decoration-none d-block py-1">Adaptación Móviles</a></li>
+              <li><a href="Tienda.html" class="text-white text-decoration-none d-block py-1">Tienda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Investigación -->
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingInvestigacion">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseInvestigacion" 
+                  aria-expanded="false" aria-controls="collapseInvestigacion">
+            Investigación
+          </button>
+        </h2>
+        <div id="collapseInvestigacion" class="accordion-collapse collapse" 
+             aria-labelledby="headingInvestigacion" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="Investigacion.html" class="text-white text-decoration-none d-block py-1">Proyecto de Investigación</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Página Oficial -->
+      <div class="accordion-item bg-black">
+        <h2 class="accordion-header" id="headingOficial">
+          <button class="accordion-button collapsed bg-black text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseOficial" 
+                  aria-expanded="false" aria-controls="collapseOficial">
+            Página Oficial
+          </button>
+        </h2>
+        <div id="collapseOficial" class="accordion-collapse collapse" 
+             aria-labelledby="headingOficial" data-bs-parent="#accordionSidebar">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="https://jruge-g.github.io/kpar-page/" target="_blank" class="text-white text-decoration-none d-block py-1">Ir a KPAR Oficial</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+</div>
+
 
  
   <div class="container my-5">
